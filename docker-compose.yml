@@ -2,7 +2,7 @@ version: '2'
 
 services:
   server:
-    container_name: teamcity_server
+    container_name: teamcity-server
     restart: unless-stopped
     image: jetbrains/teamcity-server
     ports:
@@ -14,7 +14,7 @@ services:
       - "${HOME}/data/logs:/opt/teamcity/logs"
 
   db:
-    container_name: teamcity_mssql
+    container_name: teamcity-mssql
     restart: unless-stopped
     image: microsoft/mssql-server-linux:2017-GA
     ports:
@@ -26,7 +26,7 @@ services:
       - "${HOME}/data/mssql:/var/opt/mssql"
 
   agent_1:
-    container_name: teamcity_agent_1  
+    container_name: teamcity-agent-1  
     restart: unless-stopped
     #    image: jetbrains/teamcity-agent
     build: agent

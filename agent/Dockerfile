@@ -134,7 +134,7 @@ COPY lftp-api.sync /opt/lftp
 COPY lftp-front.sync /opt/lftp
 COPY swap.sh /opt/azure
 COPY timestamp.sh /opt/azure
-COPY hooks /root/hooks
+#COPY hooks /root/hooks
 COPY README_LFTP.txt /opt/lftp
 RUN git config --global user.email 'teamcity@example.org' \
     && git config --global user.name 'Team City'

@@ -4,4 +4,3 @@ set ftp:ssl-protect-data true
 open myhostname.ftp.azurewebsites.windows.net
 user mylogin2\mypassword2 12346
 mirror --reverse --delete --verbose ./src/Api/bin/Release/netcoreapp2.0/publish/ /site/wwwroot
-exit 0
